@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final JavaScript</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Proyecto Final JavaScript</h1>
+    <nav id="menu">
+      <button data-target="buscaminas">Buscaminas</button>
+      <button data-target="sudoku">Sudoku Solver</button>
+      <button data-target="catgallery">CatGallery</button>
+      <button data-target="rickmorty">Rick & Morty Explorer</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Buscaminas -->
+    <section id="buscaminas" class="app-section hidden">
+      <h2>Buscaminas</h2>
+      <div id="buscaminas-container">
+        <!-- Aquí irá el HTML específico del Buscaminas -->
+      </div>
+    </section>
+
+    <!-- Sudoku -->
+    <section id="sudoku" class="app-section hidden">
+      <h2>Sudoku Solver</h2>
+      <div id="sudoku-container">
+        <!-- Aquí irá el HTML específico del Sudoku -->
+      </div>
+    </section>
+
+    <!-- CatGallery -->
+    <section id="catgallery" class="app-section hidden">
+      <h2>CatGallery</h2>
+      <div id="catgallery-container">
+        <!-- Aquí irá la galería de gatos -->
+      </div>
+    </section>
+
+    <!-- Rick & Morty -->
+    <section id="rickmorty" class="app-section hidden">
+      <h2>Rick & Morty Explorer</h2>
+      <div id="rickmorty-container">
+        <!-- Aquí irá el listado de personajes -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Scripts de cada mini‑app -->
+  <script src="js/buscaminas.js"></script>
+  <script src="js/sudoku.js"></script>
+  <script src="js/catgallery.js"></script>
+  <script src="js/rickmorty.js"></script>
+
+</body>
+</html>
