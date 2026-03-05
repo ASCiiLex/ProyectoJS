@@ -1,5 +1,5 @@
 // ======================================
-//   SUDOKU SOLVER – COMPLETO Y MEJORADO
+//   SUDOKU SOLVER - ESTRUCTURA BASE
 // ======================================
 
 const Sudoku = {

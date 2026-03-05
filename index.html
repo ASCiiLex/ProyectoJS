@@ -72,9 +72,35 @@
     <!-- CatGallery -->
     <section id="catgallery" class="app-section hidden">
       <h2>CatGallery</h2>
-      <div id="catgallery-container">
-        <!-- Aquí irá la galería de gatos -->
+
+      <div id="cat-controls">
+        <label>
+          Categoría:
+          <select id="cat-category">
+            <option value="">Todas</option>
+            <option value="1">Hats</option>
+            <option value="2">Space</option>
+            <option value="3">Funny</option>
+            <option value="4">Sunglasses</option>
+            <option value="5">Boxes</option>
+          </select>
+        </label>
+
+        <button id="cat-load">Cargar nuevos gatos</button>
+        <button id="cat-more">Cargar más gatos</button>
       </div>
+
+      <div id="cat-grid"></div>
+
+      <div id="cat-message"></div>
+
+      <div id="cat-modal" class="cat-modal hidden">
+        <div class="cat-modal-content">
+          <span id="cat-modal-close" class="cat-modal-close">&times;</span>
+          <img id="cat-modal-img" src="" alt="Gato grande">
+        </div>
+      </div>
+
     </section>
 
     <!-- Rick & Morty -->
