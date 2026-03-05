@@ -23,10 +23,32 @@
 
     <!-- Buscaminas -->
     <section id="buscaminas" class="app-section hidden">
-      <h2>Buscaminas</h2>
-      <div id="buscaminas-container">
-        <!-- Aquí irá el HTML específico del Buscaminas -->
-      </div>
+    <h2>Buscaminas</h2>
+
+    <div id="buscaminas-controls">
+        <label>
+        Tamaño:
+        <select id="bm-size">
+            <option value="8">8 x 8</option>
+            <option value="12">12 x 12</option>
+            <option value="16">16 x 16</option>
+        </select>
+        </label>
+
+        <label>
+        Minas:
+        <input type="number" id="bm-mines" min="1" value="10">
+        </label>
+
+        <button id="bm-start">Iniciar</button>
+
+        <span id="bm-timer">Tiempo: 0s</span>
+        <span id="bm-mines-left">Minas: 0</span>
+    </div>
+
+    <div id="buscaminas-board"></div>
+
+    <div id="buscaminas-message"></div>
     </section>
 
     <!-- Sudoku -->
