@@ -1,4 +1,7 @@
-/* ====== Reset básico ====== */
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -60,71 +63,3 @@ h2 {
   padding-bottom: 5px;
 }
 
-/* ====== Buscaminas ====== */
-
-#buscaminas-controls {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-#buscaminas-board {
-  display: grid;
-  gap: 2px;
-  margin-top: 10px;
-}
-
-/* Celdas base */
-.bm-cell {
-  width: 32px;
-  height: 32px;
-  background: #d0d0d0;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 20px;
-  user-select: none;
-  transition: background 0.15s;
-}
-
-.bm-cell:hover {
-  background: #c2c2c2;
-}
-
-/* Celdas reveladas */
-.bm-cell.revealed {
-  background: #e9e9e9;
-  cursor: default;
-}
-
-/* Banderas (🚩) */
-.bm-cell.flag {
-  background: #ffe08a;
-  color: #c62828;
-}
-
-/* Minas (💣) */
-.bm-cell.mine {
-  background: #ff6b6b;
-  color: white;
-}
-
-/* Colores de números */
-.bm-cell.revealed[data-number="1"] { color: #1976d2; }
-.bm-cell.revealed[data-number="2"] { color: #388e3c; }
-.bm-cell.revealed[data-number="3"] { color: #d32f2f; }
-.bm-cell.revealed[data-number="4"] { color: #7b1fa2; }
-.bm-cell.revealed[data-number="5"] { color: #ff8f00; }
-.bm-cell.revealed[data-number="6"] { color: #00838f; }
-.bm-cell.revealed[data-number="7"] { color: #5d4037; }
-.bm-cell.revealed[data-number="8"] { color: #455a64; }
-
-#buscaminas-message {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
