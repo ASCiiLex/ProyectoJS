@@ -106,8 +106,28 @@
     <!-- Rick & Morty -->
     <section id="rickmorty" class="app-section hidden">
       <h2>Rick & Morty Explorer</h2>
-      <div id="rickmorty-container">
-        <!-- Aquí irá el listado de personajes -->
+
+      <div id="rm-controls">
+        <input type="text" id="rm-search" placeholder="Buscar personaje...">
+        <button id="rm-search-btn">Buscar</button>
+
+        <div id="rm-pagination">
+          <button id="rm-prev">Anterior</button>
+          <span id="rm-page">Página 1</span>
+          <button id="rm-next">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="rm-grid"></div>
+
+      <div id="rm-message"></div>
+
+      <div id="rm-modal" class="rm-modal hidden">
+        <div class="rm-modal-content">
+          <span id="rm-modal-close" class="rm-modal-close">&times;</span>
+          <img id="rm-modal-img" src="" alt="Personaje">
+          <div id="rm-modal-info"></div>
+        </div>
       </div>
     </section>
 
